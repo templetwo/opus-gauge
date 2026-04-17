@@ -35,7 +35,7 @@ def call_grok(system, user):
         "Authorization": f"Bearer {XAI_API_KEY}",
         "Content-Type": "application/json",
     }, json={
-        "model": "grok-3",
+        "model": "grok-4.20-0309-reasoning",
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
