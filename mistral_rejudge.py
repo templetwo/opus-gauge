@@ -125,7 +125,7 @@ Judge these two responses. Return only JSON."""
             print(f" ERROR: {e}")
             mistral_results.append({"prompt_id": pid, "run": run, "error": str(e)})
 
-        time.sleep(0.5)
+        time.sleep(5)  # Rate limit: Mistral free tier is ~1 req/5s
 
     print(f"\nMISTRAL TOTALS: 4.6={total_wins['opus-4-6']}  4.7={total_wins['opus-4-7']}  ties={total_wins['tie']}")
 
